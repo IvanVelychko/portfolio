@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('Fonts/Lato/Lato-Regular.eot');
+    src: url('Fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/Lato/Lato-Regular.woff2') format('woff2'),
+        url('Fonts/Lato/Lato-Regular.woff') format('woff'),
+        url('Fonts/Lato/Lato-Regular.ttf') format('truetype'),
+        url('Fonts/Lato/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+p {
+  color:#EFE6DD;
+}
+body {
+  font-family: Lato;
+  background-color: #1F2041;
+}
+
+div.header {
+  height: auto;
+  background-color: #7A6D88;
+  color: #1F2041;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4B3F72;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #FFDCCC;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #EFE6DD;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #7A6D88;
+}
+
+.active {
+  background-color: #7A6D88;
+}
