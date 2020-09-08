@@ -12,11 +12,16 @@
 }
 
 p {
-  color:#EFE6DD;
+  color:#022127;
 }
 body {
   font-family: Lato;
-  background-color: #1F2041;
+  background: url("../background.svg") no-repeat center fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
 
 div.header {
@@ -33,7 +38,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #4B3F72;
+  background-color: #9AD5D5;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -41,7 +46,7 @@ ul {
 
 li {
   float: left;
-  border-right: 1px solid #FFDCCC;
+  /* border-right: 1px solid #056674; */
 }
 
 li:last-child {
@@ -50,16 +55,16 @@ li:last-child {
 
 li a {
   display: block;
-  color: #EFE6DD;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: #7A6D88;
+  background-color: #6FC3C3;
 }
 
 .active {
-  background-color: #7A6D88;
+  background-color: #7EC9C9;
 }
