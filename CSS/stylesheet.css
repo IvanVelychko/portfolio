@@ -24,10 +24,16 @@ body {
 
 }
 
-div.header {
+div.part {
   height: auto;
-  background-color: #7A6D88;
-  color: #1F2041;
+  width: 1;
+  background-color: #e0ece4;
+}
+
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
 }
 
 ul {
@@ -39,7 +45,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #9AD5D5;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -68,3 +73,13 @@ li a:hover:not(.active) {
 .active {
   background-color: #7EC9C9;
 }
+
+/* footer------------------------------------------------------------------ */
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* ------------------------------------------------------------------------*/
