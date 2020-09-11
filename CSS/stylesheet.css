@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #222831;
+}
+
 @font-face {
     font-family: 'Lato';
     src: url('Fonts/Lato/Lato-Regular.eot');
@@ -11,30 +19,11 @@
     font-display: swap;
 }
 
-p {
-  color:#022127;
-}
 body {
   font-family: Lato;
-  background: url("../background.svg") no-repeat center fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-
+  background-color: #FFFFFA;
 }
 
-div.part {
-  height: auto;
-  width: 1;
-  background-color: #e0ece4;
-}
-
-.header {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 20px;
-}
 
 ul {
   position: fixed;
@@ -44,14 +33,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #9AD5D5;
+  background-color: #EFEFFB;
   position: sticky;
-  top: 0;
 }
 
 li {
   float: left;
-  /* border-right: 1px solid #056674; */
 }
 
 li:last-child {
@@ -59,27 +46,58 @@ li:last-child {
 }
 
 li a {
+  border-radius: 1px;
   display: block;
-  color: #000;
+  color: #222831;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: #6FC3C3;
+  background-color: #CECEF3;
 }
 
 .active {
-  background-color: #7EC9C9;
+  background-color: #DEDEF7;
 }
 
 /* footer------------------------------------------------------------------ */
 .footer {
+  text-align: left;
+  background-color: seaGreen;
+  clear: both;
+  position: relative;
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
   background-color: #F1F1F1;
   text-align: center;
-  padding: 10px;
 }
 
 
 /* ------------------------------------------------------------------------*/
+
+.column {
+  text-align: center;
+  float: left;
+}
+
+.left {
+  width: 75%;
+  height: auto;
+}
+
+.right {
+  width: 25%;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
