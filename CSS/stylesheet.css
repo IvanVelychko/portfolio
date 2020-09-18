@@ -72,9 +72,9 @@ li a:hover:not(.active) {
 }
 
 .header {
+  height: 50px;
   text-align: center;
   background-color: #F1F1F1;
-  text-align: center;
 }
 
 
