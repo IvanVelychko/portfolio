@@ -1,3 +1,5 @@
+/* https://coolors.co/000022-001242-0094c6-005e7c-040f16 */
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -18,6 +20,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+.border {
+  border-style: solid;
+  border-width: 5px;
+}
+
 
 body {
   font-family: Lato;
@@ -64,7 +72,7 @@ li a:hover:not(.active) {
 /* footer------------------------------------------------------------------ */
 .footer {
   text-align: left;
-  background-color: #00003D;
+  background-color: #000E33;
   clear: both;
   position: relative;
   padding: 10px;
@@ -84,9 +92,7 @@ li a:hover:not(.active) {
 }
 
 .left {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  margin-bottom: 0.5%;
+  margin: 0.5%;
   background-color: #000A27;
   width: 74%;
   height: auto;
@@ -95,6 +101,7 @@ li a:hover:not(.active) {
 .right {
   margin-right: 0.5%;
   margin-bottom: 0.5%;
+  margin-top: 0.5%;
   width: 24.5%;
   height: auto;
   background-color: #000A27;
