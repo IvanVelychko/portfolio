@@ -71,12 +71,14 @@ li a:hover:not(.active) {
 
 /* footer------------------------------------------------------------------ */
 .footer {
-  text-align: left;
   background-color: #000E33;
   clear: both;
-  position: relative;
+  position: static;
+  bottom: 0;
+  width: 100%;
   padding: 10px;
 }
+
 
 .header {
   height: 50px;
@@ -112,4 +114,19 @@ li a:hover:not(.active) {
   content: "";
   display: table;
   clear: both;
+}
+
+
+
+/*  */
+.leftSide {
+  position: absolute;
+  text-align: left;
+}
+.rightSide {
+  position: inherit;
+  text-align: right;
+}
+.centerSide {
+  text-align: center;
 }
