@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" rel="stylesheet" href="CSS/stylesheet.css"/>
+    <link type="text/css" rel="stylesheet" href="CSS/badgesOpen.css"/>
     <title>Badges</title>
   </head>
   <body>
@@ -16,5 +17,25 @@
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <iframe id="frame" class="border" src="https://www.badgecraft.eu/auto/wallet/badge-maps/fd7902b7-b161-4a30-8ec0-988955a03f07/public" title="My Badges"></iframe>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><u><strong>Open badges</strong></u></span>
+
+      <script>
+        document.getElementById("mySidenav").style.opacity = "0";
+
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+          document.getElementById("mySidenav").style.opacity = "1";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.opacity = "0";
+          document.getElementById("mySidenav").style.width = "0%";
+        }
+      </script>
   </body>
 </html>
