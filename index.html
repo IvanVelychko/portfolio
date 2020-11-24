@@ -12,24 +12,22 @@
       <div class="centered"> <img src="Logo2.png" alt="logo" height="200px" width="auto"><br>Hi, my name is Ivan!</div>
       <img src="BgHeader.svg" height="auto" width="90%">
     </div>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Badges</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><img class="rightImage" src="Logo2.png" alt="logo" height="41px" width="auto"></li>
+    <ul class="menu">
+      <li class="menu"><a href="#home">Home</a></li>
+      <li class="menu"><a href="#badges">Badges</a></li>
+      <li class="menu"><a href="#projects">Projects</a></li>
+      <li class="menu"><a href="#contact">Contact</a></li>
+      <li class="menu"><img class="rightImage" src="Logo2.png" alt="logo" height="41px" width="auto"></li>
     </ul>
     <div class="row">
-      <div class="column left">
+      <div class="column left" id="home">
         <h1>Home</h1>
         <p>Hi, my name is Ivan Velychko. I'm 14 years old.<br>
         I live in Amsterdam, Netherlands.<br>
         I like playing games, and programming/making stuff. I also play "Dungeons And Dragons".<br>
         <br>
-        My school is located in Amsterdam, it's called 'Metis Montessori Lyceum'.<br>
+        My school is located in Amsterdam, it's called '<a href="https://www.hetmml.nl/">Metis Montessori Lyceum</a>'.<br>
         I'm in the coderclass at my school, that's a class where you can already start coding from the first class, compared to the fourth one.<br>
-        <iframe id="frame" class="border" src="index.html" title="My Badges"></iframe>
         <br>
 
       </div>
@@ -38,7 +36,7 @@
       </div>
     </div>
 
-    <div class="column left">
+    <div class="column full" id="badges">
       <h1>Badges</h1>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -63,13 +61,33 @@
           document.getElementById("mySidenav").style.opacity = "0";
           document.getElementById("mySidenav").style.width = "0%";
         }
+
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
       </script>
     </div>
 
-
-  <div class="footer">
-    <p class="leftSide">Footer</p>
-    <p class="rightSide">Made By: Ivan Velychko</p>
-  </div>
+    <div class="column full" id="projects">
+      <h1>Projects</h1>
+      <div class="gallery">
+        <img src="Projects/ZombieShooter.png" alt="Unity Zombie Shooter Screenshot">
+        <div class="desc">Unity Zombie Shooter<br>
+        <small><small>Work in progress</small></small></div>
+      </div>
+      <div class="gallery">
+        <img src="Projects/ZombieShooter.png" alt="Unity Zombie Shooter Screenshot">
+        <div class="desc"><br>
+        <small><small> progress</small></small></div>
+      </div>
+    </div>
+    <div class="column full" id="contact">
+      <h1>Contact</h1>
+      <p>You can contact me trough mail: <a href="mailto:ivan.velychko.me@gmail.com">ivan.velychko.me@gmail.com</a></p>
+    </div>
+    <div class="footer">
+      <p class="rightSide">Made By: Ivan Velychko</p>
+    </div>
   </body>
 </html>
